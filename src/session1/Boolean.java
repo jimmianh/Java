@@ -18,17 +18,24 @@ public class Boolean {
         System.out.println("Enter the Amount to withdraw: $");
         Scanner scanner = new Scanner(System.in);
         //chuyển cho về scanner.nextLine
+        //withdraw = scanner.nextDouble();
         withdraw = Double.parseDouble(scanner.nextLine());
         //nhập tên
         System.out.println("Enter the Customer Name:");
         cusname = scanner.nextLine();
 
 //
-        possible = (accountBalance > withdraw);
-        accountBalance = possible ? accountBalance - withdraw : accountBalance;
-        System.out.println("Wellcome" + cusname);
-        System.out.printf("\n Current account balance: $%.2f", accountBalance);
-        System.out.println("\nTransaction Successful:" + possible);
+//        possible = (accountBalance > withdraw);
+//        accountBalance = possible ?/*true or f*/ accountBalance - withdraw : accountBalance;
+        if(accountBalance > withdraw){
+            accountBalance = accountBalance -withdraw;
+            System.out.println("Wellcome" + cusname);
+            System.out.printf("\n Current account balance: $%.2f", accountBalance);
+//            System.out.println("\nTransaction Successful:" + possible);
+        }else {
+            System.err.println("khong du so du");
+        }
+
 
     }
 }
