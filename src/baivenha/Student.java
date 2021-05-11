@@ -1,4 +1,4 @@
-package sesssion10;
+package baivenha;
 
 public class Student {
     private int id;
