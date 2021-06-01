@@ -1,0 +1,13 @@
+{
+  "firstName" : "Code",
+  "lastName": "Lean",
+  "age": 18,
+  "streetAddress" : "1A Yet Kieu",
+  "city": "Ha Noi",
+  "state": "HN",
+  "postalCode": "10000",
+  "phoneNumber": [
+    {"Mobile":  "111-111-1111"},
+    {"Home":  "222-222-2222"}
+  ]
+}
