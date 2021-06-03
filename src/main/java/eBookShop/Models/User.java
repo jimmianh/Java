@@ -33,6 +33,9 @@ public class User {
         this.role = role;
     }
 
+    public User(int id, String username, String password, String type, String creat, String update) {
+    }
+
     public int getId() {
         return id;
     }
